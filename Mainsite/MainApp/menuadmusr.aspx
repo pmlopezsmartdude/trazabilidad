@@ -22,6 +22,13 @@
                 <asp:TreeNode Text="Administración de Roles" Value="Administración de Roles"
                         Target="workingarea" NavigateUrl="~/Account/RoleEditor.aspx">
                 </asp:TreeNode>
+                <asp:TreeNode SelectAction="Expand" Text="Administración Sistema"
+                    Value="Administracion Sistema" Expanded="False">
+                    <asp:TreeNode Text="Administrar Holding" Value="Administrar Holding"
+                    Target="workingarea"/>
+                    <asp:TreeNode Text="Administrar Empresas" Value="Administrar Empresas"
+                    Target="workingarea" />
+                 </asp:TreeNode>
             </Nodes>
         </asp:TreeView>
         <asp:TreeView ID="TreeViewApps" runat="server" Font-Names="Century Gothic"
