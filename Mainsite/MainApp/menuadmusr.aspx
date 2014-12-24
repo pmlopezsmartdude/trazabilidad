@@ -24,11 +24,9 @@
                 </asp:TreeNode>
                 <asp:TreeNode SelectAction="Expand" Text="Administración Sistema"
                     Value="Administracion Sistema" Expanded="False">
-                    <asp:TreeNode Text="Administrar Holding" Value="Administrar Holding"
-                    Target="workingarea"/>
-                    <asp:TreeNode Text="Administrar Empresas" Value="Administrar Empresas"
-                    Target="workingarea" />
-                 </asp:TreeNode>
+                    <asp:TreeNode Text="Administrar Impresoras" Value="Administrar Impresoras"
+                    Target="workingarea" NavigateUrl="~/Admsistema/impresoras.aspx" />
+                </asp:TreeNode>
             </Nodes>
         </asp:TreeView>
         <asp:TreeView ID="TreeViewApps" runat="server" Font-Names="Century Gothic"

@@ -87,6 +87,7 @@
     <Content Include="Account\ManageUsers.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RoleEditor.aspx" />
+    <Content Include="Admsistema\impresoras.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -265,6 +266,13 @@
     <Compile Include="Account\RoleEditor.aspx.designer.cs">
       <DependentUpon>RoleEditor.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admsistema\impresoras.aspx.cs">
+      <DependentUpon>impresoras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admsistema\impresoras.aspx.designer.cs">
+      <DependentUpon>impresoras.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -325,6 +333,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MainApp\Web.config" />
+    <Content Include="Admsistema\Web.config" />
     <None Include="Scripts\jquery-2.1.1.min.map" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
