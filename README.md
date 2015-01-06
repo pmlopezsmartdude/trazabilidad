@@ -1,4 +1,4 @@
-WTCpymeERP
+WTCtrazabilidad
 ==========
 
-Sistema ERP para pymes
+Sistema de trazabilidad
