@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>db Server.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AjaxControlToolkit">
       <HintPath>..\packages\AjaxControlToolkit.7.1213\lib\40\AjaxControlToolkit.dll</HintPath>
@@ -144,6 +147,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\workarea.css" />
+    <Content Include="db Server.ico" />
     <Content Include="favicon.ico" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\Admusuarios.png" />
@@ -168,13 +172,29 @@
     <Content Include="Images\orderedList9.png" />
     <Content Include="Images\right.png" />
     <Content Include="Images\right2.png" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\stars\1.png" />
+    <Content Include="Images\stars\2.png" />
+    <Content Include="Images\stars\3.png" />
+    <Content Include="Images\stars\4.png" />
+    <Content Include="Images\stars\5.png" />
+    <Content Include="Images\tables\back_disabled.jpg" />
+    <Content Include="Images\tables\back_enabled.jpg" />
+    <Content Include="Images\tables\forward_disabled.jpg" />
+    <Content Include="Images\tables\forward_enabled.jpg" />
+    <Content Include="Images\tables\sort_asc.gif" />
+    <Content Include="Images\tables\sort_both.gif" />
+    <Content Include="Images\tables\sort_desc.gif" />
     <Content Include="MainApp\admusr.aspx" />
     <Content Include="MainApp\areadetrabajo.aspx" />
     <Content Include="MainApp\Mainapp.aspx" />
     <Content Include="MainApp\menuadmusr.aspx" />
+    <Content Include="Scripts\jquery-1.4.2.min.js" />
     <Content Include="Scripts\jquery-2.1.1-vsdoc.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jquery.metadata.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Styles\Site.css" />
@@ -217,6 +237,7 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AccesoDatos.cs" />
     <Compile Include="Account\ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -273,6 +294,8 @@
     <Compile Include="Admsistema\impresoras.aspx.designer.cs">
       <DependentUpon>impresoras.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AppModules\impresion.cs" />
+    <Compile Include="MetodosDatos.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

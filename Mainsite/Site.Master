@@ -10,7 +10,40 @@
     <title><%: Page.Title %> White Cloud Technologies Sistemas informáticos</title>
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <script type="text/javascript" src="~/Scripts/jquery-2.1.1.min.js"></script>
+    <script src="~/Scripts/jquery-1.4.2.min.js" type="text/javascript" />
+    <script src="~/Scripts/jquery.metadata.js" type="text/javascript" />
+    <script src="~/Scripts/jquery.dataTables.min.js" type="text/javascript" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Setup Metadata plugin
+            $.metadata.setType("class");
+            // Setup GridView
+            $("table.grid").each(function () {
+                var jTbl = $(this);
+                if (jTbl.find("tbody>tr>th").length > 0) {
+                    jTbl.find("tbody").before("<thead><tr></tr></thead>");
+                    jTbl.find("thead:first tr").append(jTbl.find("th"));
+                    jTbl.find("tbody tr:first").remove();
+                }
+                // If GridView has the 'sortable' class and has more than 10 rows
+                if (jTbl.hasClass("sortable") && jTbl.find("tbody:first > tr").length > 10) {
+                    // Run DataTable on the GridView
+                    jTbl.dataTable({
+                        sPaginationType: "full_numbers",
+                        sDom: '<"top"lf>rt<"bottom"ip>',
+                        oLanguage: {
+                            sInfoFiltered: "(from _MAX_ entries)",
+                            sSearch: ""
+                        },
+                        aoColumnDefs: [
+                { bSortable: false, aTargets: jTbl.metadata().disableSortCols }
+            ]
+                    });
+                }
+            });
+        }); 
+     </script>
+   <%-- <script type="text/javascript" src="~/Scripts/jquery-2.1.1.min.js"></script>--%>
     <script src="Scripts/modernizr-2.8.3.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width" />
 
