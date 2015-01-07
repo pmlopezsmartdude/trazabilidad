@@ -32,11 +32,10 @@ namespace Mainsite.AppModules
                 Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                 sock.Connect(ep);
                 NetworkStream ns = new NetworkStream(sock);
-                //string impresionslcs = "CB\r\n SM0,0\r\n SS3\n\n SW530\r\n STd\r\n SOT\r\n SD20\r\n SL400,28,G\r\n T53,15,2,0,1,0,0,N,B,'prueba de impresion'\r\n P1\r\n";
                 string impresionslcs = "CB\r\n" + "SM0,0\r\n" + "SS3\r\n" + "SW530\r\n" + "STd\r\n" + "SOT\r\n" + "SD20\r\n" + "SL400,28,G\r\n" + "T53,15,2,0,1,0,0,N,B,'" + fruit + "/" + fruto +
                     "'\r\n" + "T53,45,2,0,2,0,0,N,B,'" + variedad + "'\r\n" + "T317,18,4,2,2,0,0," + dark + ",N,'" + calibre + "'\r\n" + "T310,100,2,2,1,0,0,N,N,'" + cat + "'\r\n" +
                     "T53,92,1,0,0,0,0,N,N,'Net Wt: Kg. Neto'\r\n" + "T53,105,2,1,2,0,0,N,N,'" + peso + "'\r\n" + "T160,105,2,1,2,0,0,N,B,'" + codigoenvase + "'\r\n" +
-                    "T311,127,1,0,0,0,0,N,N,'" + lote + "'\r\n" + "T311,147,1,0,0,0,0,N,N,'Prc.No:" + numproceso + "'\r\n" + "T311,167,1,0,0,0,0,N,N,'Date/Fecha:'\r\n" +
+                    "T311,127,1,0,0,0,0,N,N,'Lote  :" + lote + "'\r\n" + "T311,147,1,0,0,0,0,N,N,'Prc.No:" + numproceso + "'\r\n" + "T311,167,1,0,0,0,0,N,N,'Date/Fecha:'\r\n" +
                     "T311,184,1,0,2,0,0,N,N,'" + fechaembalaje + "'\r\n" + "T311,230,1,0,2,0,0,N,N,'SDP:" + sdp + "'\r\n" + "BD309,14,470,232,B,2\r\n" + "T53,153,0,0,2,0,0,N,B,'Grower/Productor/CSG:'\r\n" +
                     "T205,176,2,1,2,0,0,N,B,'" + codigoproductor + "'\r\n" + "T53,194,1,0,0,0,0,N,N,'REGION: '\r\n" + "T144,194,1,0,0,0,0,N,N,'" + region + "'\r\n" +
                     "T53,224,1,0,0,0,0,N,N,'PROV:'\r\n" + "T112,218,0,0,2,0,0,N,N,'" + provincia + "'\r\n" + "T53,255,1,0,0,0,0,N,N,'COM:'\r\n" + "T112,249,0,0,2,0,0,N,N,'" +
