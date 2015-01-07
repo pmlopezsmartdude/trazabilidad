@@ -42,6 +42,16 @@ namespace Mainsite.Admsistema
         }
         protected void pruebaimp(object sender, EventArgs e)
         {
+            int port = 9100;
+            string str = impresorasGrid.SelectedRow.Cells[2].Text;
+            switch (str)
+            {
+                case "bixolon             ":
+                    AppModules.impresion.imprimebixolon(txt_ip.Text, port, "Cherries", "Cerezas", "BING", "XXL", "R", "CAT 1", "5 KG", "CEAMGR", "000169", "00109", "06/01/15", "000000", "96125", "VI", "CACHAPOAL", "RANCAGUA", "88466", "Soc. ficticia solo prueba", "91637", "Doña Juanita, MOSTAZAL, CACHAPOAL", "9_2", "T123", "914111200785");
+                    break;
+                default:
+                    break;
+            }
 
         }
         protected void DeleteImpresora(object sender, EventArgs e)
