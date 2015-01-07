@@ -19,6 +19,21 @@ namespace Mainsite
             _comando.Parameters.AddWithValue("@ipimp", ipimp);
             return MetodosDatos.EjecutarComando(_comando);
         }
+
+        public static int AD_InsertarEmpleados(string EmpNombre, string EmpApellido, string EmpRutSD, string EmpRutDig, string EmpCargo, string EmpCodigo, string EmpPlantaId)
+        {
+            SqlCommand _comando = MetodosDatos.CrearCommandoProc("[InsertarEmpleado]");
+            _comando.Parameters.AddWithValue("@nombre", EmpNombre);
+            _comando.Parameters.AddWithValue("@apellido", EmpApellido);
+            _comando.Parameters.AddWithValue("@rut", EmpRutSD);
+            _comando.Parameters.AddWithValue("@digito", EmpRutDig);
+            _comando.Parameters.AddWithValue("@cargo", EmpCargo);
+            _comando.Parameters.AddWithValue("@codigo", EmpCodigo);
+            _comando.Parameters.AddWithValue("@planta", EmpPlantaId);
+
+            return MetodosDatos.EjecutarComando(_comando);
+        }
+
         public static DataTable obtenerImpresorasTable()
         {
             SqlCommand _comando = MetodosDatos.CrearComando();
