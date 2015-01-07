@@ -26,6 +26,9 @@
                     Value="Administracion Sistema" Expanded="False">
                     <asp:TreeNode Text="Administrar Impresoras" Value="Administrar Impresoras"
                     Target="workingarea" NavigateUrl="~/Admsistema/impresoras.aspx" />
+                    <asp:TreeNode Text="Ingresar Nuevo Trabajador" Value="Ingresar Nuevo"
+                    Target="workingarea" NavigateUrl="~/Admsistema/IngresoEmpleados.aspx"></asp:TreeNode>
+                    
                 </asp:TreeNode>
             </Nodes>
         </asp:TreeView>

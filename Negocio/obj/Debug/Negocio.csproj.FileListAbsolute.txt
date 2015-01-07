@@ -1,0 +1,7 @@
+D:\Proyectos\trazabilidad\Negocio\bin\Debug\Negocio.dll
+D:\Proyectos\trazabilidad\Negocio\bin\Debug\Negocio.pdb
+D:\Proyectos\trazabilidad\Negocio\bin\Debug\Datos.dll
+D:\Proyectos\trazabilidad\Negocio\bin\Debug\Datos.pdb
+D:\Proyectos\trazabilidad\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+D:\Proyectos\trazabilidad\Negocio\obj\Debug\Negocio.dll
+D:\Proyectos\trazabilidad\Negocio\obj\Debug\Negocio.pdb

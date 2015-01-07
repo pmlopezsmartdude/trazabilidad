@@ -190,3 +190,7 @@ D:\Proyectos\trazabilidad\Mainsite\bin\zh-Hant\System.Spatial.resources.dll
 D:\Proyectos\trazabilidad\Mainsite\obj\Debug\WTCSolutions.csprojResolveAssemblyReference.cache
 D:\Proyectos\trazabilidad\Mainsite\obj\Debug\Mainsite.dll
 D:\Proyectos\trazabilidad\Mainsite\obj\Debug\Mainsite.pdb
+D:\Proyectos\trazabilidad\Mainsite\bin\Datos.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\Negocio.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\Datos.pdb
+D:\Proyectos\trazabilidad\Mainsite\bin\Negocio.pdb

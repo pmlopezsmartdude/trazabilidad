@@ -5,16 +5,17 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
-
 namespace Mainsite.Admsistema
 {
-    public partial class IngresoEmpleados : System.Web.UI.Page
+    public partial class AdmEmpleados : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             NuevoCargo.NavigateUrl = "IngresoCargo.aspx?ReturnUrl=" + HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]);
-
+          
+                if (!Page.IsPostBack)
+                    gvMostrar();
+        
         }
 
         protected void manual_CheckedChanged(object sender, EventArgs e)
@@ -47,7 +48,11 @@ namespace Mainsite.Admsistema
 
         }
 
-
-
+        protected void gvMostrar()
+        {
+            GridView.DataSource = AccesoLogica.ObtenerEmpleados();
+            GridView.DataBind();
+            
+        }
     }
 }
