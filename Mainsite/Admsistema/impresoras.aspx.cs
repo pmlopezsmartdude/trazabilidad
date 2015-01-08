@@ -47,7 +47,7 @@ namespace Mainsite.Admsistema
             switch (str)
             {
                 case "bixolon             ":
-                    AppModules.impresion.imprimebixolon(txt_ip.Text, port, "Cherries", "Cerezas", "BING", "XXL", "R", "CAT 1", "5 KG", "CEAMGR", "000169", "00109", "06/01/15", "000000", "96125", "VI", "CACHAPOAL", "RANCAGUA", "88466", "Soc. ficticia solo prueba", "91637", "Doña Juanita, MOSTAZAL, CACHAPOAL", "9_2", "T123", "914111200785");
+                    AppModules.impresion.imprimebixolon(txt_ip.Text, port, "Ingles", "Español", "Variedad", "XXL", "R", "CAT 1", "X KG", "AAAAAA", "000001", "00001", "06/01/15", "000000", "88888", "RM", "PROVINCIA", "COMUNA", "88888", "Soc. ficticia solo prueba", "99999", "Packing, Ubicación, Provincia", "9_2", "T123", "944333222555");
                     break;
                 default:
                     break;

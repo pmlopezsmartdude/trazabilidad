@@ -194,3 +194,7 @@ D:\Proyectos\trazabilidad\Mainsite\bin\Datos.dll
 D:\Proyectos\trazabilidad\Mainsite\bin\Negocio.dll
 D:\Proyectos\trazabilidad\Mainsite\bin\Datos.pdb
 D:\Proyectos\trazabilidad\Mainsite\bin\Negocio.pdb
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Datos.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Negocio.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Datos.pdb
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Negocio.pdb
