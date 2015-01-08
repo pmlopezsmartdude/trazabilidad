@@ -127,10 +127,27 @@
         </asp:Table>
 </fieldset>                
             </ContentTemplate>
-            </asp:TabPanel>
-            <asp:TabPanel runat="server" HeaderText="Agregar Impresora" ID="Tabpanel2" Enabled="true" Font-Names="Century Gothic" Font-Size="X-Small" style="width:100%;">
-            </asp:TabPanel>
-        </asp:TabContainer>
+</asp:TabPanel>
+<asp:TabPanel runat="server" HeaderText="Agregar Impresora" ID="Tabpanel2" Enabled="true" Font-Names="Century Gothic" Font-Size="X-Small" style="width:100%;">
+<ContentTemplate>
+<asp:Table ID="Table2" runat="server"
+        style="display:block; width:100%; border:none; margin:5; padding:10; height:100%;"
+        Height="430px" Font-Names="Century Gothic" Font-Size="X-Small"
+        BackColor="White">
+<asp:TableRow ID="TableRow3" style="width:100%;" runat="server" BackColor="White">
+<asp:TableCell></asp:TableCell>
+<asp:TableCell><asp:Label runat="server" ID="NuevoNombreImp" Height="20">Nombre Impresora</asp:Label></asp:TableCell>
+<asp:TableCell><asp:Label runat="server" ID="lbl20" Height="20">:</asp:Label></asp:TableCell>
+<asp:TableCell><asp:TextBox runat="server" ID="txtnomimpr" Width="80" Height="20" Font-Names="Century Gothic" Font-Size="X-Small"></asp:TextBox></asp:TableCell>
+<asp:TableCell></asp:TableCell>
+<asp:TableCell><asp:Label runat="server" ID="MarcaImp" Height="20">Marca</asp:Label></asp:TableCell>
+<asp:TableCell><asp:Label runat="server" ID="lbl21" Height="20">:</asp:Label></asp:TableCell>
+<asp:TableCell><asp:DropDownList runat="server" ID="nuevamarca" Height="20" Font-Names="Century Gothic" Font-Size="X-Small" DataSourceID="SqlDataSource2" DataTextField="marca" DataValueField="marca"></asp:DropDownList></asp:TableCell>
+</asp:TableRow>
+</asp:Table>
+</ContentTemplate>
+</asp:TabPanel>
+</asp:TabContainer>
 
 <asp:ModalPopupExtender ID="impEditOrder" runat="server"
         DynamicServicePath="" TargetControlID="hideButton" Enabled="true" PopupControlID="divPopUp"  PopupDragHandleControlID="panelDragHandle"></asp:ModalPopupExtender>
