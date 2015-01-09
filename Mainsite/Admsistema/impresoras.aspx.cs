@@ -40,6 +40,12 @@ namespace Mainsite.Admsistema
         {
             ModalPopupExtender2.Show();
         }
+        protected void limpiaagrimp(object sender, EventArgs e)
+        {
+            txtnomimpr.Text = "";
+            newimpip.Text = "";
+            newimpport.Text = "9100";
+        }
         protected void pruebaimp(object sender, EventArgs e)
         {
             int port = 9100;
@@ -47,7 +53,7 @@ namespace Mainsite.Admsistema
             switch (str)
             {
                 case "bixolon             ":
-                    AppModules.impresion.imprimebixolon(txt_ip.Text, port, "Ingles", "Español", "Variedad", "XXL", "R", "CAT 1", "X KG", "AAAAAA", "000001", "00001", "06/01/15", "000000", "88888", "RM", "PROVINCIA", "COMUNA", "88888", "Soc. ficticia solo prueba", "99999", "Packing, Ubicación, Provincia", "9_2", "T123", "944333222555");
+                    AppModules.impresion.imprimebixolon(txt_ip.Text, port, "Ingles", "Español", "Variedad", "XXL", "R", "CAT 1", "X KG", "AAAAAA", "000001", "00001", "06/01/15", "000000", "88888", "RM", "PROVINCIA", "COMUNA", "88888", "Soc. ficticia solo prueba", "99999", "Packing, Ubicación, Provincia", "9_2", "T123", "14010925551234");
                     break;
                 default:
                     break;

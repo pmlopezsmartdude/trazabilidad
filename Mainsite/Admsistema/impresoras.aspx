@@ -138,11 +138,41 @@
 <asp:TableCell></asp:TableCell>
 <asp:TableCell><asp:Label runat="server" ID="NuevoNombreImp" Height="20">Nombre Impresora</asp:Label></asp:TableCell>
 <asp:TableCell><asp:Label runat="server" ID="lbl20" Height="20">:</asp:Label></asp:TableCell>
-<asp:TableCell><asp:TextBox runat="server" ID="txtnomimpr" Width="80" Height="20" Font-Names="Century Gothic" Font-Size="X-Small"></asp:TextBox></asp:TableCell>
+<asp:TableCell><asp:TextBox runat="server" ID="txtnomimpr" Width="80" Height="20" Font-Names="Century Gothic" Font-Size="X-Small" MaxLength="20"></asp:TextBox>
+<asp:RegularExpressionValidator ID="RegularExpressionValidator" runat="server"
+ControlToValidate="txtnomimpr"
+ErrorMessage="Por favor ingrese un nombre Válido" ForeColor="Red"
+ValidationExpression="^[A-Z0-9 a-z]*$" /></asp:TableCell>
 <asp:TableCell></asp:TableCell>
 <asp:TableCell><asp:Label runat="server" ID="MarcaImp" Height="20">Marca</asp:Label></asp:TableCell>
 <asp:TableCell><asp:Label runat="server" ID="lbl21" Height="20">:</asp:Label></asp:TableCell>
 <asp:TableCell><asp:DropDownList runat="server" ID="nuevamarca" Height="20" Font-Names="Century Gothic" Font-Size="X-Small" DataSourceID="SqlDataSource2" DataTextField="marca" DataValueField="marca"></asp:DropDownList></asp:TableCell>
+</asp:TableRow>
+<asp:TableRow>
+<asp:TableCell></asp:TableCell>
+<asp:TableCell><asp:Label runat="server" ID="lbl22" Height="20">Ip</asp:Label></asp:TableCell>
+<asp:TableCell><asp:Label runat="server" ID="lbl23" Height="20">:</asp:Label></asp:TableCell>
+<asp:TableCell><asp:TextBox runat="server" ID="newimpip" Height="20" Font-Names="Century Gothic" Font-Size="X-Small" Width="80"></asp:TextBox>
+<asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server"
+ControlToValidate="newimpip"
+ErrorMessage="Por favor ingrese una Dirección IP válida" ForeColor="Red"
+ValidationExpression="^(([01]?\d\d?|2[0-4]\d|25[0-5])\.){3}([01]?\d\d?|25[0-5]|2[0-4]\d)$" /></asp:TableCell>
+<asp:TableCell></asp:TableCell>
+<asp:TableCell><asp:Label runat="server" ID="lbl24" Height="20">Puerto</asp:Label></asp:TableCell>
+<asp:TableCell><asp:Label runat="server" ID="lbl25" Height="20">:</asp:Label></asp:TableCell>
+<asp:TableCell><asp:TextBox runat="server" ID="newimpport" Height="20" Font-Names="Century Gothic" Font-Size="X-Small" Text="9100" MaxLength="4" Width="40"></asp:TextBox>
+<asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server"
+ControlToValidate="newimpport"
+ErrorMEssage="Por favor ingrese un puerto válido" ForeColor="Red"
+ValidationExpression="^[0-9]*$" />
+</asp:TableCell>
+</asp:TableRow>
+<asp:TableRow>
+<asp:TableCell></asp:TableCell>
+<asp:TableCell></asp:TableCell>
+<asp:TableCell></asp:TableCell>
+<asp:TableCell><asp:Button ID="btngrabar" runat="server" Text="Agregar" Font-Size="X-Small" Font-Names="Century Gothic" /></asp:TableCell>
+<asp:TableCell><asp:Button ID="btnlimpiar" runat="server" Text="Limpiar" Font-Size="X-Small" Font-Names="Century Gothic" onclick="limpiaagrimp"  /></asp:TableCell>
 </asp:TableRow>
 </asp:Table>
 </ContentTemplate>
