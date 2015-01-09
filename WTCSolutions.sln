@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuxAdmTools", "AuxAdmTools\AuxAdmTools.csproj", "{6EE42F5B-FD3F-4F85-A4D7-087388F31C0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceProceso", "WcfServiceProceso\WcfServiceProceso.csproj", "{C5994C5A-FD34-4217-9E0A-58FDFC559B13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{6EE42F5B-FD3F-4F85-A4D7-087388F31C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EE42F5B-FD3F-4F85-A4D7-087388F31C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EE42F5B-FD3F-4F85-A4D7-087388F31C0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5994C5A-FD34-4217-9E0A-58FDFC559B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5994C5A-FD34-4217-9E0A-58FDFC559B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5994C5A-FD34-4217-9E0A-58FDFC559B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5994C5A-FD34-4217-9E0A-58FDFC559B13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
